@@ -14,6 +14,8 @@ export async function getStaticProps() {
     {
       myArticles {
         title
+        username
+        organization
         slug
         date: published_timestamp
         tag_list
@@ -49,7 +51,8 @@ export default function Home({ posts }) {
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((post) => {
-            const { slug, date, title, description, tags } = post
+            let { organization, username, slug, date, title, description, tags } = post
+            username = organization ? organization : username
             return (
               <li key={slug} className="py-12">
                 <article>
@@ -65,7 +68,7 @@ export default function Home({ posts }) {
                         <div>
                           <h2 className="text-2xl font-bold leading-8 tracking-tight">
                             <Link
-                              href={`/blog/${slug}`}
+                              href={`/blog/${username}/${slug}`}
                               className="text-gray-900 dark:text-gray-100"
                             >
                               {title}

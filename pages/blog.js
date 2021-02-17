@@ -9,6 +9,8 @@ export async function getStaticProps() {
     {
       myArticles {
         title
+        username
+        organization
         slug
         date: published_timestamp
         tag_list

@@ -11,17 +11,24 @@ export async function getStaticPaths() {
     {
       myArticles {
         slug
+        username
+        organization
       }
     }
   `
   const posts = await graphQLClient.request(query)
-
-  return {
-    paths: posts.myArticles.map((p) => ({
+  const paths = posts.myArticles.map((p) => {
+    let username = p.organization ? p.organization : p.username
+    return {
       params: {
+        username: username,
         slug: p.slug,
       },
-    })),
+    }
+  })
+
+  return {
+    paths: paths,
     fallback: false,
   }
 }
@@ -32,7 +39,6 @@ export async function getStaticProps({ params }) {
       myArticles {
         title
         slug
-        username
         tag_list
         date: published_timestamp
         description
@@ -66,7 +72,7 @@ export async function getStaticProps({ params }) {
     }
   `
   const postPathVar = {
-    path: '/' + allPosts.myArticles[0].username + '/' + params.slug,
+    path: '/' + params.username + '/' + params.slug,
   }
   const postDetail = await graphQLClient.request(postQuery, postPathVar)
   const postIndex = allPosts.myArticles.findIndex((post) => post.slug === params.slug)
