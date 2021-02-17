@@ -8,6 +8,7 @@ const postDateTemplate = tinytime('{MMMM} {DD}, {YYYY}')
 export default function ListLayout({ posts, title }) {
   const [searchValue, setSearchValue] = useState('')
   const filteredBlogPosts = posts.filter((frontMatter) => {
+    frontMatter.tags = frontMatter.tag_list.split(', ')
     const searchContent = frontMatter.title + frontMatter.summary + frontMatter.tags.join(' ')
     return searchContent.toLowerCase().includes(searchValue.toLowerCase())
   })
@@ -46,7 +47,7 @@ export default function ListLayout({ posts, title }) {
         <ul>
           {!filteredBlogPosts.length && 'No posts found.'}
           {filteredBlogPosts.map((frontMatter) => {
-            const { slug, date, title, summary, tags } = frontMatter
+            const { slug, date, title, description, tags } = frontMatter
             return (
               <li key={slug} className="py-4">
                 <article className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
@@ -70,7 +71,7 @@ export default function ListLayout({ posts, title }) {
                       </div>
                     </div>
                     <div className="prose text-gray-500 max-w-none dark:text-gray-400">
-                      {summary}
+                      {description}
                     </div>
                   </div>
                 </article>

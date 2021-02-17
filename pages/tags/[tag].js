@@ -1,17 +1,17 @@
-import fs from 'fs'
-import path from 'path'
+import { GraphQLClient, gql } from 'graphql-request'
 import { kebabCase } from '@/lib/utils'
-import { getAllFilesFrontMatter } from '@/lib/mdx'
 import { getAllTags } from '@/lib/tags'
 import siteMetadata from '@/data/siteMetadata'
 import ListLayout from '@/layouts/ListLayout'
 import { PageSeo } from '@/components/SEO'
 import generateRss from '@/lib/generate-rss'
+import fs from 'fs'
+import path from 'path'
 
 const root = process.cwd()
 
 export async function getStaticPaths() {
-  const tags = await getAllTags('blog')
+  const tags = await getAllTags()
 
   return {
     paths: Object.keys(tags).map((tag) => ({
@@ -24,11 +24,32 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const allPosts = await getAllFilesFrontMatter('blog')
-  const filteredPosts = allPosts.filter(
-    (post) => post.draft !== true && post.tags.map((t) => kebabCase(t)).includes(params.tag)
-  )
-
+  const graphQLClient = new GraphQLClient('https://biggs.stepzen.net/dev/devto/__graphql', {
+    headers: {
+      authorization: 'apikey ' + process.env.STEPZEN_API_KEY,
+    },
+  })
+  const query = gql`
+    {
+      myArticles {
+        title
+        slug
+        date: published_timestamp
+        path
+        tag_list
+        description
+        user {
+          name
+          email
+        }
+      }
+    }
+  `
+  const posts = await graphQLClient.request(query)
+  // unfortunately, the DEV API does not offer a way to query a user's posts by tag
+  const filteredPosts = posts.myArticles.filter((post) => {
+    if (post.tag_list.indexOf(params.tag.toLowerCase()) >= 0) return true
+  })
   // rss
   const rss = generateRss(filteredPosts, `tags/${params.tag}/index.xml`)
   const rssPath = path.join(root, 'public', 'tags', params.tag)

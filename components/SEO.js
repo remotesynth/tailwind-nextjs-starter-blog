@@ -1,35 +1,37 @@
 import { NextSeo, ArticleJsonLd } from 'next-seo'
 import siteMetadata from '@/data/siteMetadata'
 
-export const SEO = {
-  title: siteMetadata.title,
-  description: siteMetadata.description,
-  openGraph: {
-    type: 'website',
-    locale: siteMetadata.language,
-    url: siteMetadata.siteUrl,
+export const SEO = ({ name, twitter }) => {
+  return {
     title: siteMetadata.title,
     description: siteMetadata.description,
-    images: [
+    openGraph: {
+      type: 'website',
+      locale: siteMetadata.language,
+      url: siteMetadata.siteUrl,
+      title: siteMetadata.title,
+      description: siteMetadata.description,
+      images: [
+        {
+          url: `${siteMetadata.siteUrl}${siteMetadata.socialBanner}`,
+          alt: siteMetadata.title,
+          width: 1200,
+          height: 600,
+        },
+      ],
+    },
+    twitter: {
+      handle: twitter,
+      site: twitter,
+      cardType: 'summary_large_image',
+    },
+    additionalMetaTags: [
       {
-        url: `${siteMetadata.siteUrl}${siteMetadata.socialBanner}`,
-        alt: siteMetadata.title,
-        width: 1200,
-        height: 600,
+        name: 'author',
+        content: name,
       },
     ],
-  },
-  twitter: {
-    handle: siteMetadata.twitter,
-    site: siteMetadata.twitter,
-    cardType: 'summary_large_image',
-  },
-  additionalMetaTags: [
-    {
-      name: 'author',
-      content: siteMetadata.author,
-    },
-  ],
+  }
 }
 
 export const PageSeo = ({ title, description, url }) => {
@@ -47,9 +49,18 @@ export const PageSeo = ({ title, description, url }) => {
   )
 }
 
-export const BlogSeo = ({ title, summary, date, lastmod, url, tags, images = [] }) => {
-  const publishedAt = new Date(date).toISOString()
-  const modifiedAt = new Date(lastmod || date).toISOString()
+export const BlogSeo = ({
+  title,
+  description,
+  published_timestamp,
+  edited_at,
+  url,
+  tags,
+  user,
+  images = [],
+}) => {
+  const publishedAt = new Date(published_timestamp).toISOString()
+  const modifiedAt = new Date(edited_at || published_timestamp).toISOString()
   let imagesArr =
     images.length === 0
       ? [siteMetadata.socialBanner]
@@ -68,7 +79,7 @@ export const BlogSeo = ({ title, summary, date, lastmod, url, tags, images = [] 
     <>
       <NextSeo
         title={`${title} – ${siteMetadata.title}`}
-        description={summary}
+        description={description}
         canonical={url}
         openGraph={{
           type: 'article',
@@ -80,7 +91,7 @@ export const BlogSeo = ({ title, summary, date, lastmod, url, tags, images = [] 
           },
           url,
           title,
-          description: summary,
+          description: description,
           images: featuredImages,
         }}
         additionalMetaTags={[
@@ -91,12 +102,12 @@ export const BlogSeo = ({ title, summary, date, lastmod, url, tags, images = [] 
         ]}
       />
       <ArticleJsonLd
-        authorName={siteMetadata.author}
+        authorName={user.name}
         dateModified={publishedAt}
         datePublished={modifiedAt}
-        description={summary}
+        description={description}
         images={featuredImages}
-        publisherName={siteMetadata.author}
+        publisherName={user.name}
         title={title}
         url={url}
       />

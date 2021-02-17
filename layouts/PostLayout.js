@@ -5,20 +5,22 @@ import SectionContainer from '@/components/SectionContainer'
 import PageTitle from '@/components/PageTitle'
 import { BlogSeo } from '@/components/SEO'
 import Tag from '@/components/Tag'
-import siteMetdata from '@/data/siteMetadata'
+import siteMetadata from '@/data/siteMetadata'
 
-const editUrl = (fileName) => `${siteMetdata.siteRepo}/blob/master/data/blog/${fileName}`
 const discussUrl = (slug) =>
-  `https://mobile.twitter.com/search?q=${encodeURIComponent(`${siteMetdata.siteUrl}/blog/${slug}`)}`
+  `https://mobile.twitter.com/search?q=${encodeURIComponent(
+    `${siteMetadata.siteUrl}/blog/${slug}`
+  )}`
 
 const postDateTemplate = tinytime('{dddd}, {MMMM} {DD}, {YYYY}')
 
 export default function PostLayout({ children, frontMatter, next, prev }) {
-  const { slug, fileName, date, title, tags } = frontMatter
+  const { slug, url, published_timestamp, title, user } = frontMatter
+  const tags = frontMatter.tag_list.split(', ')
 
   return (
     <SectionContainer>
-      <BlogSeo url={`${siteMetdata.siteUrl}/blog/${frontMatter.slug}`} {...frontMatter} />
+      <BlogSeo url={`${siteMetadata.siteUrl}/blog/${slug}`} {...frontMatter} />
       <article>
         <div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
           <header className="pt-6 xl:pb-6">
@@ -27,7 +29,9 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
                 <div>
                   <dt className="sr-only">Published on</dt>
                   <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                    <time dateTime={date}>{postDateTemplate.render(new Date(date))}</time>
+                    <time dateTime={published_timestamp}>
+                      {postDateTemplate.render(new Date(published_timestamp))}
+                    </time>
                   </dd>
                 </div>
               </dl>
@@ -45,17 +49,17 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
               <dd>
                 <ul className="flex justify-center space-x-8 xl:block sm:space-x-12 xl:space-x-0 xl:space-y-8">
                   <li className="flex items-center space-x-2">
-                    <img src={siteMetdata.image} alt="avatar" className="w-10 h-10 rounded-full" />
+                    <img src={user.avatar_url} alt="avatar" className="w-10 h-10 rounded-full" />
                     <dl className="text-sm font-medium leading-5 whitespace-nowrap">
                       <dt className="sr-only">Name</dt>
-                      <dd className="text-gray-900 dark:text-gray-100">{siteMetdata.author}</dd>
+                      <dd className="text-gray-900 dark:text-gray-100">{user.name}</dd>
                       <dt className="sr-only">Twitter</dt>
                       <dd>
                         <Link
-                          href={siteMetdata.twitter}
+                          href={'https://twitter.com/' + user.twitter_username}
                           className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
                         >
-                          {siteMetdata.twitter.replace('https://twitter.com/', '@')}
+                          {'@' + user.twitter_username}
                         </Link>
                       </dd>
                     </dl>
@@ -70,7 +74,7 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
                   {'Discuss on Twitter'}
                 </Link>
                 {` • `}
-                <Link href={editUrl(fileName)}>{'View on GitHub'}</Link>
+                <Link href={url}>{'View on DEV.to'}</Link>
               </div>
             </div>
             <footer>

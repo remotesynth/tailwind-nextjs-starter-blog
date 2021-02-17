@@ -1,83 +1,863 @@
 
   <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-      <title>Next.js Starter Blog</title>
+      <title>StepZen Blog Template</title>
       <link>https://tailwind-nextjs-starter-blog.vercel.app/blog</link>
-      <description>A blog created with Next.js and Tailwind.css</description>
+      <description>A blog built with Next.js, Tailwind.css and StepZen.</description>
       <language>en-us</language>
-      <managingEditor>address@yoursite.com (Tails Azimuth)</managingEditor>
-      <webMaster>address@yoursite.com (Tails Azimuth)</webMaster>
-      <lastBuildDate>Tue, 12 Jan 2021 00:00:00 GMT</lastBuildDate>
+      <managingEditor>brian.rinaldi@gmail.com (Brian Rinaldi)</managingEditor>
+      <webMaster>brian.rinaldi@gmail.com (Brian Rinaldi)</webMaster>
+      <lastBuildDate>Mon, 15 Feb 2021 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://tailwind-nextjs-starter-blog.vercel.app/index.xml" rel="self" type="application/rss+xml"/>
       
   <item>
-    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/introducing-tailwind-nextjs-starter-blog</guid>
-    <title>Introducing Tailwind Nexjs Starter Blog</title>
-    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/introducing-tailwind-nextjs-starter-blog</link>
-    <description>Looking for a performant, out of the box template, with all the best in web technology to support your blogging needs? Checkout the Tailwind Nextjs Starter Blog template.</description>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/learn-to-love-your-jamstack-bff-4ej3</guid>
+    <title>Learn To Love Your Jamstack BFF</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/learn-to-love-your-jamstack-bff-4ej3</link>
+    <description>Let's explore the BFF pattern, how it applies to Jamstack applications and how to make it easier to implement.</description>
+    <pubDate>Mon, 15 Feb 2021 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>graphql</category><category>webdev</category><category>jamstack</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/exploring-javascript-client-libraries-for-graphql-36hi</guid>
+    <title>Exploring JavaScript Client Libraries for GraphQL</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/exploring-javascript-client-libraries-for-graphql-36hi</link>
+    <description>Exploring three popular GraphQL JavaScript client libraries that you can use to connect to a GraphQL API in the browser or in Node.js.</description>
+    <pubDate>Mon, 08 Feb 2021 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>graphql</category><category>webdev</category><category>javascript</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/thinking-in-jamstack-bhb</guid>
+    <title>Thinking in Jamstack</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/thinking-in-jamstack-bhb</link>
+    <description>One of the more challenging aspects of Jamstack development can be that it requires you to change your mental model around when to render content in a web app.</description>
+    <pubDate>Thu, 21 Jan 2021 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>jamstack</category><category>webdev</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/graphql-and-the-jamstack-2e95</guid>
+    <title>GraphQL and the Jamstack</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/graphql-and-the-jamstack-2e95</link>
+    <description>A look at the intertwined evolution of the Jamstack and GraphQL and how popular Jamstack tools are built upon a GraphQL foundation.</description>
     <pubDate>Tue, 12 Jan 2021 00:00:00 GMT</pubDate>
-    <author>address@yoursite.com (Tails Azimuth)</author>
-    <category>next-js</category><category>tailwind</category><category>guide</category>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>webdev</category><category>jamstack</category><category>api</category>
   </item>
 
   <item>
-    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/guide-to-using-images-in-nextjs</guid>
-    <title>Images in Next.js</title>
-    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/guide-to-using-images-in-nextjs</link>
-    <description>In this article we introduce adding images in the tailwind starter blog and the benefits and limitations of the next/image component.</description>
-    <pubDate>Wed, 11 Nov 2020 00:00:00 GMT</pubDate>
-    <author>address@yoursite.com (Tails Azimuth)</author>
-    <category>next js</category><category>guide</category>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/what-is-the-jamstack-in-2021-1p1n</guid>
+    <title>What Is the Jamstack in 2021?</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/what-is-the-jamstack-in-2021-1p1n</link>
+    <description>What Jamstack means is evolving. While labels don't help you get your work done, they are also important.</description>
+    <pubDate>Mon, 28 Dec 2020 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>jamstack</category><category>webdev</category><category>javascript</category>
   </item>
 
   <item>
-    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/deriving-ols-estimator</guid>
-    <title>Deriving the OLS Estimator</title>
-    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/deriving-ols-estimator</link>
-    <description>How to derive the OLS Estimator with matrix notation and a tour of math typesetting using markdown with the help of KaTeX.</description>
-    <pubDate>Sat, 16 Nov 2019 00:00:00 GMT</pubDate>
-    <author>address@yoursite.com (Tails Azimuth)</author>
-    <category>next js</category><category>math</category><category>ols</category>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/consuming-graphql-in-plain-javascript-51c</guid>
+    <title>Consuming GraphQL in Plain JavaScript</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/consuming-graphql-in-plain-javascript-51c</link>
+    <description>A GraphQL query is just a standard HTTP request, no special libraries needed. Let's look at how to create one in JavaScript and Node.js.</description>
+    <pubDate>Wed, 16 Dec 2020 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>webdev</category><category>graphql</category><category>javascript</category>
   </item>
 
   <item>
-    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/github-markdown-guide</guid>
-    <title>Markdown Guide</title>
-    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/github-markdown-guide</link>
-    <description>Markdown cheatsheet for all your blogging needs - headers, lists, images, tables and more! An illustrated guide based on Github Flavored Markdown.</description>
-    <pubDate>Fri, 11 Oct 2019 00:00:00 GMT</pubDate>
-    <author>address@yoursite.com (Tails Azimuth)</author>
-    <category>github</category><category>guide</category>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/how-to-write-graphql-queries-4416</guid>
+    <title>How to Write GraphQL Queries</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/how-to-write-graphql-queries-4416</link>
+    <description>GraphQL queries are what allow GraphQL to be efficient in how it gets data, by allowing you to express only what you need but also exactly everything you need. In this post, we'll see how.</description>
+    <pubDate>Thu, 03 Dec 2020 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>graphql</category><category>api</category><category>beginners</category>
   </item>
 
   <item>
-    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/the-time-machine</guid>
-    <title>The Time Machine</title>
-    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/the-time-machine</link>
-    <description>The Time Traveller (for so it will be convenient to speak of him) was expounding a recondite matter to us. His pale grey eyes shone and twinkled, and his usually pale face was flushed and animated...</description>
-    <pubDate>Wed, 15 Aug 2018 00:00:00 GMT</pubDate>
-    <author>address@yoursite.com (Tails Azimuth)</author>
-    <category>writings</category><category>book</category><category>reflection</category>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/the-best-kept-secret-for-free-developer-education-1lna</guid>
+    <title>The Best Kept Secret for Free Developer Education</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/the-best-kept-secret-for-free-developer-education-1lna</link>
+    <description>CFE.dev has live virtual meetups and hundreds of hours of free sessions for developers on a wide range of topics.</description>
+    <pubDate>Mon, 24 Aug 2020 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>learning</category><category>beginners</category><category>computerscience</category><category>webdev</category>
   </item>
 
   <item>
-    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/pictures-of-canada</guid>
-    <title>O Canada</title>
-    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/pictures-of-canada</link>
-    <description>The scenic lands of Canada featuring maple leaves, snow-capped mountains, turquoise lakes and Toronto. Take in the sights in this photo gallery exhibition and see how easy it is to replicate with some MDX magic and tailwind classes.</description>
-    <pubDate>Sat, 15 Jul 2017 00:00:00 GMT</pubDate>
-    <author>address@yoursite.com (Tails Azimuth)</author>
-    <category>holiday</category><category>canada</category><category>images</category>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/getting-started-with-next-js-for-jamstack-development-3djb</guid>
+    <title>Getting Started with Next.js for Jamstack Development</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/getting-started-with-next-js-for-jamstack-development-3djb</link>
+    <description>Next.js is an increasingly popular solution for creating Jamstack sites using JavaScript and React. In this post we explore how to build your first Jamstack site using Next.js that connects to a headless CMS for content using the Sourcebit open source project.</description>
+    <pubDate>Tue, 23 Jun 2020 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>jamstack</category><category>webdev</category><category>react</category>
   </item>
 
   <item>
-    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/code-sample</guid>
-    <title>Sample .md file</title>
-    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/code-sample</link>
-    <description>Example of a markdown file with code blocks and syntax highlighting</description>
-    <pubDate>Tue, 08 Mar 2016 00:00:00 GMT</pubDate>
-    <author>address@yoursite.com (Tails Azimuth)</author>
-    <category>markdown</category><category>code</category><category>features</category>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/4-new-tools-to-watch-in-the-jamstack-ecosystem-1335</guid>
+    <title>4 New Tools to Watch in the Jamstack Ecosystem</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/4-new-tools-to-watch-in-the-jamstack-ecosystem-1335</link>
+    <description>There have been a lot of new innovations in the Jamstack ecosystem already in 2020. Let's look at some of the major highlights including new static site generators and new deployment tools.</description>
+    <pubDate>Mon, 08 Jun 2020 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>jamstack</category><category>webdev</category><category>angular</category><category>react</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/what-is-markdown-and-why-does-it-matter-to-the-jamstack-3kij</guid>
+    <title>What is Markdown and Why Does it Matter to the Jamstack?</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/what-is-markdown-and-why-does-it-matter-to-the-jamstack-3kij</link>
+    <description>Markdown is so ubiquitous in the Jamstack that many people confuse the M in the JAM acronym to mean Markdown rather than markup. But how did this happen and why does Markdown play such a big role in Jamstack development?</description>
+    <pubDate>Tue, 19 May 2020 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>webdev</category><category>jamstack</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/advanced-hugo-template-tips-and-tricks-10mf</guid>
+    <title>Advanced Hugo Template Tips and Tricks</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/advanced-hugo-template-tips-and-tricks-10mf</link>
+    <description>Hugo's Go-powered templates can accomplish some very powerful templating tasks. In this post, I share some tips and tricks that I've found useful when building advanced Hugo templates.</description>
+    <pubDate>Mon, 20 Apr 2020 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>webdev</category><category>jamstack</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/building-documentation-sites-with-the-jamstack-15c8</guid>
+    <title>Building Documentation Sites with the JAMstack</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/building-documentation-sites-with-the-jamstack-15c8</link>
+    <description>Documentation sites are a longstanding and common use case for the JAMstack. In this post we explore some of the options available to you for developing them and show an example of how to build one.</description>
+    <pubDate>Tue, 07 Apr 2020 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>webdev</category><category>jamstack</category><category>documentation</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/how-to-choose-your-static-site-generator-56m1</guid>
+    <title>How to Choose Your Static Site Generator</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/how-to-choose-your-static-site-generator-56m1</link>
+    <description>The static site generator (SSG) is a key ingredient in developing a JAMstack web app, but there are literally hundreds to choose from. I offer my advice and guidance on choosing the option that's best for you.</description>
+    <pubDate>Wed, 01 Apr 2020 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>webdev</category><category>jamstack</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/build-your-first-sourcebit-plugin-4bnc</guid>
+    <title>Build Your First Sourcebit Plugin</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/build-your-first-sourcebit-plugin-4bnc</link>
+    <description>Sourcebit is a fully-extensible open source project that can connect any data source with a JAMstack site. In this post, we'll learn how you can build a plugin to connect to a data source, target SSG or transform data.</description>
+    <pubDate>Mon, 23 Mar 2020 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>jamstack</category><category>webdev</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/getting-started-with-ecommerce-and-the-jamstack-4kh7</guid>
+    <title>Getting Started with Ecommerce and the JAMstack</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/getting-started-with-ecommerce-and-the-jamstack-4kh7</link>
+    <description>A look at some of the options for building an ecommerce site using the JAMstack including a demo that shows how to easily build am ecommerce site using a headless CMS and Snipcart.</description>
+    <pubDate>Thu, 19 Mar 2020 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>webdev</category><category>jamstack</category><category>ecommerce</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/tips-for-running-virtual-meetups-and-events-2bo1</guid>
+    <title>Tips for Running Virtual Meetups and Events</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/tips-for-running-virtual-meetups-and-events-2bo1</link>
+    <description>Tips and advice from 2.5 years of experiences running online meetups, workshops and events.</description>
+    <pubDate>Thu, 12 Mar 2020 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>career</category><category>discuss</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/data-driven-jamstack-with-sourcebit-42k4</guid>
+    <title>Data-driven JAMstack with Sourcebit</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/data-driven-jamstack-with-sourcebit-42k4</link>
+    <description>Sourcebit is a new open source project that aims to make it easy for developers to connect their JAMstack site to data coming from a broad range of sources. In this tutorial, we explore how to use it.</description>
+    <pubDate>Wed, 26 Feb 2020 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>webdev</category><category>jamstack</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/the-j-in-jamstack-does-not-stand-for-react-or-angular-vue-svelte-etc-493g</guid>
+    <title>The J in JAMstack Does Not Stand for React (or Angular, Vue, Svelte, etc.)</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/the-j-in-jamstack-does-not-stand-for-react-or-angular-vue-svelte-etc-493g</link>
+    <description>Correcting what seems to be a common misconceptions about what makes an app JAMstack</description>
+    <pubDate>Fri, 21 Feb 2020 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>webdev</category><category>jamstack</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/3-strategies-for-migrating-from-wordpress-to-jamstack-30bp</guid>
+    <title>3 Strategies for Migrating from Wordpress to JAMstack</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/3-strategies-for-migrating-from-wordpress-to-jamstack-30bp</link>
+    <description>Migrating from Wordpress to JAMstack offers a number of potential benefits, but it can be difficult to know what the best strategy for transitioning content is. This post offers some potential strategies for making the move.</description>
+    <pubDate>Wed, 19 Feb 2020 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>jamstack</category><category>webdev</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/is-jamstack-all-branding-and-little-substance-1pih</guid>
+    <title>Is JAMstack All Branding and Little Substance?</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/is-jamstack-all-branding-and-little-substance-1pih</link>
+    <description>JAMstack has been accused of being just fancy buzzword branding, but is there actual substance behind the term? I share my thoughts on why I think there is.</description>
+    <pubDate>Tue, 18 Feb 2020 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>jamstack</category><category>webdev</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/baby-steps-with-next-js-for-jamstack-ol2</guid>
+    <title>Baby Steps with Next.js for JAMstack</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/baby-steps-with-next-js-for-jamstack-ol2</link>
+    <description>Sharing my learning process as a React and Next.js noob</description>
+    <pubDate>Mon, 27 Jan 2020 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>react</category><category>webdev</category><category>javascript</category><category>jamstack</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/build-your-own-api-with-netlify-functions-and-zapier-webhooks-part-2-j55</guid>
+    <title>Build Your Own API with Netlify Functions and Zapier Webhooks, Part 2</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/build-your-own-api-with-netlify-functions-and-zapier-webhooks-part-2-j55</link>
+    <description>See how to use Zapier webhook and Netlify Functions to dynamically update content on your site and rebuild it.</description>
+    <pubDate>Mon, 20 Jan 2020 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>jamstack</category><category>webdev</category><category>jamuary</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/build-your-own-jamstack-api-with-netlify-functions-and-zapier-webhooks-part-1-48pd</guid>
+    <title>Build Your Own JAMstack API with Netlify Functions and Zapier Webhooks, Part 1</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/build-your-own-jamstack-api-with-netlify-functions-and-zapier-webhooks-part-1-48pd</link>
+    <description>Connecting your JAMstack site to a Zapier webhook using Netlify functions gives you access to all sorts of cool features.</description>
+    <pubDate>Thu, 16 Jan 2020 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>jamstack</category><category>webdev</category><category>jamuary</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/what-to-expect-from-the-jamstack-in-2020-ahmad-awais-dhj</guid>
+    <title>What to Expect from the JAMstack in 2020 - Ahmad Awais</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/what-to-expect-from-the-jamstack-in-2020-ahmad-awais-dhj</link>
+    <description>Ahmad Awais of Cloudinary shares what changes we saw in the JAMstack ecosystem in 2019 and what he expects for 2020.</description>
+    <pubDate>Mon, 30 Dec 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>webdev</category><category>jamstack</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/what-to-expect-from-the-jamstack-in-2020-bud-parr-4f69</guid>
+    <title>What to Expect from the JAMstack in 2020 - Bud Parr</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/what-to-expect-from-the-jamstack-in-2020-bud-parr-4f69</link>
+    <description>What exciting new things happened in 2019 in JAMstack? What can you expect to see in 2020? Bud Parr, creator of The New Dynamic community and newsletter, shares his thoughts.</description>
+    <pubDate>Mon, 23 Dec 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>webdev</category><category>jamstack</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/thoughts-on-the-state-of-js-survey-2keg</guid>
+    <title>Thoughts on the State of JS Survey</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/thoughts-on-the-state-of-js-survey-2keg</link>
+    <description>A look at some of the results from the latest JavaScript developer survey and some items that stood out.</description>
+    <pubDate>Fri, 20 Dec 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>javascript</category><category>webdev</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/what-to-expect-from-the-jamstack-in-2020-chris-coyier-2hfj</guid>
+    <title>What to Expect from the JAMstack in 2020 - Chris Coyier</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/what-to-expect-from-the-jamstack-in-2020-chris-coyier-2hfj</link>
+    <description>Chris Coyier shares what she thought was important about this past year in JAMstack and what she thinks you can expect for the year to come.</description>
+    <pubDate>Fri, 20 Dec 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>webdev</category><category>jamstack</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/what-to-expect-from-the-jamstack-in-2020-tara-manicsic-4hce</guid>
+    <title>What to Expect from the JAMstack in 2020 - Tara Manicsic</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/what-to-expect-from-the-jamstack-in-2020-tara-manicsic-4hce</link>
+    <description>Tara Manicsic shares what she thought was important about this past year in JAMstack and what she thinks you can expect for the year to come.</description>
+    <pubDate>Thu, 19 Dec 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>webdev</category><category>jamstack</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/what-to-expect-from-the-jamstack-in-2020-bryan-robinson-lg1</guid>
+    <title>What to Expect from the JAMstack in 2020 - Bryan Robinson</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/what-to-expect-from-the-jamstack-in-2020-bryan-robinson-lg1</link>
+    <description>Bryan Robinson shares what he thought was important about this past year in JAMstack and what he thinks you can expect for the year to come.</description>
+    <pubDate>Wed, 18 Dec 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>webdev</category><category>jamstack</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/what-to-expect-from-the-jamstack-in-2020-gift-egwenu-20me</guid>
+    <title>What to Expect from the JAMstack in 2020 - Gift Egwuenu</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/what-to-expect-from-the-jamstack-in-2020-gift-egwenu-20me</link>
+    <description>Gift Egwenu shares what she thought was important about this past year in JAMstack and what she thinks you can expect for the year to come.</description>
+    <pubDate>Tue, 17 Dec 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>webdev</category><category>jamstack</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/what-to-expect-from-the-jamstack-in-2020-raymond-camden-4621</guid>
+    <title>What to Expect from the JAMstack in 2020 - Raymond Camden</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/what-to-expect-from-the-jamstack-in-2020-raymond-camden-4621</link>
+    <description>Raymond Camden shares what he thought was important about this past year in JAMstack and what he thinks you can expect for the year to come.</description>
+    <pubDate>Mon, 16 Dec 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>webdev</category><category>jamstack</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/creating-a-jamstack-site-with-open-authoring-using-netlify-cms-5ab5</guid>
+    <title>Creating a JAMstack Site with Open Authoring Using Netlify CMS</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/creating-a-jamstack-site-with-open-authoring-using-netlify-cms-5ab5</link>
+    <description>Leverage the power of the community by creating a JAMstack site that anyone can edit and contribute using NetlifyCMS's open authoring.</description>
+    <pubDate>Mon, 09 Dec 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>webdev</category><category>jamstack</category><category>tutorial</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/15-jamstack-resources-you-need-as-a-web-developer-2j7n</guid>
+    <title>15 JAMstack Resources You Need as a Web Developer</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/15-jamstack-resources-you-need-as-a-web-developer-2j7n</link>
+    <description>Whether you are getting started or already advanced, these are the links that you'll need as a JAMstack developer.</description>
+    <pubDate>Wed, 20 Nov 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>jamstack</category><category>webdev</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/gating-content-in-jamstack-sites-40o0</guid>
+    <title>Gating Content in JAMstack Sites</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/gating-content-in-jamstack-sites-40o0</link>
+    <description>A step-by-step guide to adding registration and login requirements to sections of content on a JAMstack site.</description>
+    <pubDate>Thu, 14 Nov 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>webdev</category><category>jamstack</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/easy-monitoring-of-your-netlify-builds-41p7</guid>
+    <title>Easy Monitoring of Your Netlify Builds</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/easy-monitoring-of-your-netlify-builds-41p7</link>
+    <description>A new tool let's you automatically detect and monitor your Netlify builds from your own site.</description>
+    <pubDate>Thu, 07 Nov 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>jamstack</category><category>webdev</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/own-your-content-broaden-your-audience-30fp</guid>
+    <title>Own Your Content, Broaden Your Audience</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/own-your-content-broaden-your-audience-30fp</link>
+    <description>Dev.to gives developers access to a wide audience while letting them keep ownership of their content. The integration with Stackbit makes this even easier.</description>
+    <pubDate>Tue, 22 Oct 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>jamstack</category><category>webdev</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/the-evolution-of-web-content-management-44ll</guid>
+    <title>The Evolution of Web Content Management</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/the-evolution-of-web-content-management-44ll</link>
+    <description>A look at the evolution of web content management from the early days of the web to the headless, cloud-based CMS systems of today.</description>
+    <pubDate>Wed, 02 Oct 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>webdev</category><category>jamstack</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/what-s-wrong-with-the-tech-interview-process-3b3m</guid>
+    <title>What's Wrong with the Tech Interview Process?</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/what-s-wrong-with-the-tech-interview-process-3b3m</link>
+    <description>There is widespread belief that the tech interview process is broken but little in the way of movement to change it.</description>
+    <pubDate>Fri, 20 Sep 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>career</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/markdown-is-markup-and-other-confusions-around-jamstack-41pg</guid>
+    <title>Markdown is Markup and Other Confusions Around JAMStack</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/markdown-is-markup-and-other-confusions-around-jamstack-41pg</link>
+    <description>What makes a site JAMStack? A lot of it is in the M for markup.</description>
+    <pubDate>Fri, 13 Sep 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>webdev</category><category>jamstack</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/understanding-oauth-authorization-flows-10ok</guid>
+    <title>Understanding OAuth Authorization Flows</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/understanding-oauth-authorization-flows-10ok</link>
+    <description>What happens when you authenticate in an application using OAuth 2.0 implicit and PKCE flows.</description>
+    <pubDate>Wed, 04 Sep 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>webdev</category><category>security</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/don-t-let-your-tools-define-you-as-a-developer-knk</guid>
+    <title>Don't Let Your Tools Define You as a Developer</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/don-t-let-your-tools-define-you-as-a-developer-knk</link>
+    <description>Developers are defining themselves into ever smaller niches and that concerns me.</description>
+    <pubDate>Thu, 29 Aug 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>webdev</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/getting-started-with-offline-data-in-web-apps-pt-3-cam</guid>
+    <title>Getting Started with Offline Data in Web Apps Pt. 3</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/getting-started-with-offline-data-in-web-apps-pt-3-cam</link>
+    <description>A guide to getting started with IndexedDB for storing large amounts of complex data offline.</description>
+    <pubDate>Thu, 22 Aug 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>webdev</category><category>javascript</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/so-you-want-to-run-a-developer-conference-47ee</guid>
+    <title>So You Want to Run a Developer Conference</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/so-you-want-to-run-a-developer-conference-47ee</link>
+    <description>Some tips and advice based on my experiences running conferences for more than a decade.</description>
+    <pubDate>Fri, 16 Aug 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>career</category><category>devrel</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/knowing-the-web-s-history-is-critical-to-its-present-and-future-54fd</guid>
+    <title>Knowing the Web's History is Critical to Its Present and Future</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/knowing-the-web-s-history-is-critical-to-its-present-and-future-54fd</link>
+    <description>Understanding the history of the web will help guide you to the its future.</description>
+    <pubDate>Fri, 09 Aug 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>webdev</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/how-to-write-a-great-conference-talk-proposal-from-conference-organizers-1pha</guid>
+    <title>How to Write a Great Conference Talk Proposal from Conference Organizers</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/how-to-write-a-great-conference-talk-proposal-from-conference-organizers-1pha</link>
+    <description>Advice and resources from the organizers of some major conferences on how to create a compelling conference talk proposal.</description>
+    <pubDate>Thu, 01 Aug 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>career</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/the-best-newsletters-to-subscribe-to-for-a-frontend-developer-1ni1</guid>
+    <title>The Best Newsletters to Subscribe to for a Frontend Developer</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/the-best-newsletters-to-subscribe-to-for-a-frontend-developer-1ni1</link>
+    <description>A summary of newsletter resources related to frontend development, JavaScript, CSS and more.</description>
+    <pubDate>Thu, 25 Jul 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>webdev</category><category>javascript</category><category>css</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/technical-debt-is-not-just-technical-11ad</guid>
+    <title>Technical Debt is Not Just Technical</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/technical-debt-is-not-just-technical-11ad</link>
+    <description>Many factors can influence technical debt and many of them have nothing to do with code.</description>
+    <pubDate>Fri, 19 Jul 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>career</category><category>discuss</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/getting-started-with-offline-data-in-web-apps-pt-2-39o2</guid>
+    <title>Getting Started with Offline Data in Web Apps Pt. 2</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/getting-started-with-offline-data-in-web-apps-pt-2-39o2</link>
+    <description>Exploring what localStorage is, how it works and how it can be used to store and access data offline.</description>
+    <pubDate>Fri, 12 Jul 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>webdev</category><category>javascript</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/choosing-what-to-learn-l2m</guid>
+    <title>Choosing What to Learn</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/choosing-what-to-learn-l2m</link>
+    <description>How do you decide what's important to focus on? I share some of my own ideas and want to know yours.</description>
+    <pubDate>Thu, 04 Jul 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>discuss</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/getting-started-with-offline-data-in-web-apps-pt-1-136a</guid>
+    <title>Getting Started with Offline Data in Web Apps Pt. 1</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/getting-started-with-offline-data-in-web-apps-pt-1-136a</link>
+    <description>A look at different options for determining the user's online/offline status and connection speed.</description>
+    <pubDate>Fri, 28 Jun 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>webdev</category><category>javascript</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/confused-by-javascript-s-const-me-too-4dfo</guid>
+    <title>Confused by JavaScript's const? Me too!</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/confused-by-javascript-s-const-me-too-4dfo</link>
+    <description>Constants in JavaScript don't necessarily behave the way you think they would.</description>
+    <pubDate>Fri, 21 Jun 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>javascript</category><category>webdev</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/using-netlify-to-the-fullest-3ef</guid>
+    <title>Using Netlify to the Fullest</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/using-netlify-to-the-fullest-3ef</link>
+    <description>Finally taking advantage of some of the Netlify platform's more advanced features.</description>
+    <pubDate>Fri, 14 Jun 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>webdev</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/should-i-build-it-lbp</guid>
+    <title>Should I Build It?</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/should-i-build-it-lbp</link>
+    <description>A brief look at the ethical dilemmas facing today's developers.</description>
+    <pubDate>Wed, 05 Jun 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>discuss</category><category>ethics</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/a-developer-career-doesn-t-have-to-be-linear-ccb</guid>
+    <title>A Developer Career Doesn't Have to Be Linear</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/a-developer-career-doesn-t-have-to-be-linear-ccb</link>
+    <description>Some tips based on my experience for finding your unique path in your career development as a developer. </description>
+    <pubDate>Fri, 31 May 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>career</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/3-tips-for-writing-great-tech-posts-3a6h</guid>
+    <title>3 Tips for Writing Great Tech Posts</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/3-tips-for-writing-great-tech-posts-3a6h</link>
+    <description>Some broad guidelines for writing technical or code-focused blog posts and articles.</description>
+    <pubDate>Thu, 23 May 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>writing</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/quick-tips-and-tricks-for-hugo-development-7dc</guid>
+    <title>Quick Tips and Tricks for Hugo Development</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/quick-tips-and-tricks-for-hugo-development-7dc</link>
+    <description>A look at some simple but overlooked as well as some advanced techniques for the Hugo static site generator.</description>
+    <pubDate>Wed, 15 May 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>webdev</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/building-and-deploying-a-jamstack-site-with-stackbit-1gg0</guid>
+    <title>Building and Deploying a JAMStack site with Stackbit</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/building-and-deploying-a-jamstack-site-with-stackbit-1gg0</link>
+    <description>A quick introduction to using the Stackbit service for creating a content-managed JAMStack site</description>
+    <pubDate>Mon, 06 May 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>webdev</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/a-fresh-look-at-netlify-cms-part-2-5694</guid>
+    <title>A Fresh Look at Netlify CMS (Part 2)</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/a-fresh-look-at-netlify-cms-part-2-5694</link>
+    <description>Configuring an existing JAMStack site to use Netlify CMS</description>
+    <pubDate>Thu, 02 May 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>tutorial</category><category>webdev</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/promoting-perceived-performance-with-prefetching-57c7</guid>
+    <title>Promoting Perceived Performance with Prefetching</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/promoting-perceived-performance-with-prefetching-57c7</link>
+    <description>A look at two libraries designed to help improve the perceived performance of web apps</description>
+    <pubDate>Thu, 25 Apr 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>javascript</category><category>webdev</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/there-s-more-than-one-way-to-become-a-developer-3h09</guid>
+    <title>There's More Than One Way to Become a Developer</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/there-s-more-than-one-way-to-become-a-developer-3h09</link>
+    <description>An overview of the pros and cons of the different education options to become a developer</description>
+    <pubDate>Thu, 18 Apr 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>career</category><category>discuss</category><category>beginners</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/some-things-you-may-have-missed-in-the-stack-overflow-developer-survey-2019-edition-4l3b</guid>
+    <title>Some Things You May Have Missed in the Stack Overflow Developer Survey (2019 Edition)</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/some-things-you-may-have-missed-in-the-stack-overflow-developer-survey-2019-edition-4l3b</link>
+    <description>A quick look at some highlights from the latest edition of StackOverflow's survey</description>
+    <pubDate>Fri, 12 Apr 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>career</category><category>culture</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/a-fresh-look-at-netlify-cms-part-1-136k</guid>
+    <title>A Fresh Look at Netlify CMS (Part 1)</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/a-fresh-look-at-netlify-cms-part-1-136k</link>
+    <description>Getting started with Netlify CMS on project using a fresh install.</description>
+    <pubDate>Tue, 09 Apr 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>tutorial</category><category>webdev</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/want-to-speak-at-conferences-ill-help-review-your-cfp-submissions-55o6</guid>
+    <title>Want to Speak at Conferences? I'll Help Review Your CFP Submissions</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/want-to-speak-at-conferences-ill-help-review-your-cfp-submissions-55o6</link>
+    <description>Need some help with your session abstract for a conference call for papers? I'm here to assist.</description>
+    <pubDate>Mon, 25 Mar 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>career</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/allies-dont-make-inclusion-about-themselves-4ean</guid>
+    <title>Allies Don't Make Inclusion About Themselves</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/allies-dont-make-inclusion-about-themselves-4ean</link>
+    <description>I will never play baseball. Sure, I played as a kid, briefly, and I was terrible. I have since tried...</description>
+    <pubDate>Fri, 08 Mar 2019 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>shecodedally</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/14-of-my-favorite-developer-blog-posts-in-2018-5fci</guid>
+    <title>14 of My Favorite Developer Blog Posts in 2018</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/14-of-my-favorite-developer-blog-posts-in-2018-5fci</link>
+    <description>In 2018, we focused on performance, mobile and how tough it can be to be (or become) a dev.</description>
+    <pubDate>Thu, 20 Dec 2018 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>webdev</category><category>programming</category><category>career</category><category>discuss</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/get-your-code-ready-for-the-holidays-pm8</guid>
+    <title>Get Your Code Ready for the Holidays!</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/get-your-code-ready-for-the-holidays-pm8</link>
+    <description>Some holiday-themed links for developers.</description>
+    <pubDate>Mon, 10 Dec 2018 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>discuss</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/is-today-the-best-time-to-be-a-developer-nobut-were-getting-better-5ik</guid>
+    <title>Is Today the Best Time to be a Developer? No...but We're Getting Better.</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/is-today-the-best-time-to-be-a-developer-nobut-were-getting-better-5ik</link>
+    <description>While working as a developer certainly has its rewards, there are some major issues we need to address.</description>
+    <pubDate>Thu, 01 Nov 2018 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>career</category><category>discuss</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/javascript-standardization---an-interview-with-jory-burson-i0o</guid>
+    <title>JavaScript Standardization - An Interview with Jory Burson</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/javascript-standardization---an-interview-with-jory-burson-i0o</link>
+    <description>Talking JavaScript language standards and TC39 with Jory Burson of Bocoup</description>
+    <pubDate>Mon, 24 Sep 2018 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>javascript</category><category>opensource</category><category>webdev</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/4-things-developers-take-for-granted-that-used-to-be-really-hard-2fd3</guid>
+    <title>4 Things Developers Take for Granted That Used to Be Really Hard</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/4-things-developers-take-for-granted-that-used-to-be-really-hard-2fd3</link>
+    <description>While development is still complicated, some things have definitely improved.</description>
+    <pubDate>Wed, 29 Aug 2018 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>discuss</category><category>technology</category><category>career</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/what-i-learned-from-a-year-of-running-free-developer-events-5hfn</guid>
+    <title>What I Learned from a Year of Running Free Developer Events</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/what-i-learned-from-a-year-of-running-free-developer-events-5hfn</link>
+    <description>Running developer events - even online only ones - can be tough but rewarding, exhausting but also thrilling.</description>
+    <pubDate>Fri, 03 Aug 2018 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>career</category><category>learning</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/what-developers-should-know-from-microsoft-build-5d0j</guid>
+    <title>What Developers Should Know from Microsoft Build</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/what-developers-should-know-from-microsoft-build-5d0j</link>
+    <description>We're clearly entering a new era for Microsoft and for developers that moves from tools and platforms to cloud and services.</description>
+    <pubDate>Sat, 12 May 2018 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>discuss</category><category>microsoft</category><category>career</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/github-pages-now-support-https---use-it-2d5h</guid>
+    <title>GitHub Pages Now Support HTTPS - Use It!</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/github-pages-now-support-https---use-it-2d5h</link>
+    <description>GitHub finally announces HTTPS support for sites hosted using their GitHub Pages service.</description>
+    <pubDate>Tue, 01 May 2018 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>webdev</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/running-ssl-on-localhost-42ol</guid>
+    <title>Running SSL on localhost</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/running-ssl-on-localhost-42ol</link>
+    <description>Some strategies for local testing with SSL</description>
+    <pubDate>Wed, 18 Apr 2018 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>webdev</category><category>node</category><category>jekyll</category><category>javascript</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/some-things-you-may-have-missed-in-the-stack-overflow-developer-survey-40lo</guid>
+    <title>Some Things You May Have Missed in the Stack Overflow Developer Survey</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/some-things-you-may-have-missed-in-the-stack-overflow-developer-survey-40lo</link>
+    <description>Let's dig into the data a little bit.</description>
+    <pubDate>Thu, 05 Apr 2018 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>career</category><category>culture</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/theres-no-such-thing-as-a-full-stack-developer-2fp9</guid>
+    <title>There's No Such Thing as a Full Stack Developer</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/theres-no-such-thing-as-a-full-stack-developer-2fp9</link>
+    <description>A rant about defining titles with unachievable standards.</description>
+    <pubDate>Tue, 20 Mar 2018 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>career</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/conforming-to-javascript-code-styles--50h6</guid>
+    <title>Conforming to JavaScript Code Styles</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/conforming-to-javascript-code-styles--50h6</link>
+    <description>Tips on for adhering to style guides by integrating Prettier with ESlint in VS Code.</description>
+    <pubDate>Mon, 12 Mar 2018 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>javascript</category><category>webdev</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/a-license-to-confuse-fk8</guid>
+    <title>A License to Confuse</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/a-license-to-confuse-fk8</link>
+    <description>More evidence that developers aren't noticing the licenses in the software they use.</description>
+    <pubDate>Mon, 29 Jan 2018 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>opensource</category><category>discuss</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/what-are-the-must-follow-resources-for-developers-8f4</guid>
+    <title>What are the Must Follow Resources for Developers?</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/what-are-the-must-follow-resources-for-developers-8f4</link>
+    <description>A comprehensive list with descriptions of the sites and newsletters for developers that I follow.</description>
+    <pubDate>Tue, 23 Jan 2018 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>webdev</category><category>learning</category><category>tips</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/why-web-app-performance-matters-and-what-to-watch-out-for---an-interview-with-tammy-everts-27g</guid>
+    <title>Why Web App Performance Matters and What to Watch Out For - An Interview with Tammy Everts</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/why-web-app-performance-matters-and-what-to-watch-out-for---an-interview-with-tammy-everts-27g</link>
+    <description>Tammy Everts talks about what performance metrics matter most to developers.</description>
+    <pubDate>Tue, 16 Jan 2018 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>performance</category><category>webdev</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/from-ice-skating-to-bootcamp-to-full-stack-dev---an-interview-with-aimee-knight-49c0</guid>
+    <title>From Ice Skating to Bootcamp to Full Stack Dev - An Interview with Aimee Knight</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/from-ice-skating-to-bootcamp-to-full-stack-dev---an-interview-with-aimee-knight-49c0</link>
+    <description>Aimee Knight shares some of what she's learned on her journey from ice skater to full stack developer</description>
+    <pubDate>Tue, 09 Jan 2018 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>css</category><category>career</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/from-cordova-to-bots-to-serverless---an-interview-with-brian-leroux-1nk</guid>
+    <title>From Cordova to Bots to Serverless - An Interview with Brian Leroux</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/from-cordova-to-bots-to-serverless---an-interview-with-brian-leroux-1nk</link>
+    <description>Brian Leroux previews his upcoming presentation by discussing why he created arc.codes and why serverless matters.</description>
+    <pubDate>Wed, 06 Dec 2017 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>serverless</category><category>javascript</category><category>bots</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/that-topic-has-already-been-covered-n7</guid>
+    <title>That Topic Has Already Been Covered!</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/that-topic-has-already-been-covered-n7</link>
+    <description>Don't let the fact that a topic has already been written about dissuade you from adding your own voice.</description>
+    <pubDate>Wed, 01 Nov 2017 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>culture</category><category>career</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/developers-need-to-start-paying-attention-to-licenses</guid>
+    <title>Developers Need to Start Paying Attention to Licenses</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/developers-need-to-start-paying-attention-to-licenses</link>
+    <description>Ignoring software licenses can be dangerous. Let's try to understand them - open source, commercial and more.</description>
+    <pubDate>Mon, 11 Sep 2017 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>opensource</category><category>softwaredevelopment</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/what-the-web-owes-flash</guid>
+    <title>What the Web Owes Flash</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/what-the-web-owes-flash</link>
+    <description>As we conduct our post-mortems on Flash, it's important to remember that Flash helped make the web what it is today.</description>
+    <pubDate>Thu, 27 Jul 2017 00:00:00 GMT</pubDate>
+    <author>brian.rinaldi@gmail.com (Brian Rinaldi)</author>
+    <category>flash</category><category>webstandards</category><category>webdev</category>
   </item>
 
     </channel>
