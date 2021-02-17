@@ -1,5 +1,6 @@
 import siteMetadata from '@/data/siteMetadata'
-import { GraphQLClient, gql } from 'graphql-request'
+import { gql } from 'graphql-request'
+import { graphQLClient } from '@/lib/graphql-client'
 import SocialIcon from '@/components/social-icons'
 import { PageSeo } from '@/components/SEO'
 import tinytime from 'tinytime'
@@ -8,11 +9,6 @@ import Link from '@/components/Link'
 const postDateTemplate = tinytime('{MMMM} {DD}, {YYYY}')
 
 export async function getStaticProps() {
-  const graphQLClient = new GraphQLClient('https://biggs.stepzen.net/dev/devto/__graphql', {
-    headers: {
-      authorization: 'apikey ' + process.env.STEPZEN_API_KEY,
-    },
-  })
   const query = gql`
     {
       user {

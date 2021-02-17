@@ -1,4 +1,5 @@
-import { GraphQLClient, gql } from 'graphql-request'
+import { gql } from 'graphql-request'
+import { graphQLClient } from '@/lib/graphql-client'
 import PostLayout from '@/layouts/PostLayout'
 import ReactMarkdown from 'react-markdown'
 import matter from 'gray-matter'
@@ -6,11 +7,6 @@ import generateRss from '@/lib/generate-rss'
 import fs from 'fs'
 
 export async function getStaticPaths() {
-  const graphQLClient = new GraphQLClient('https://biggs.stepzen.net/dev/devto/__graphql', {
-    headers: {
-      authorization: 'apikey ' + process.env.STEPZEN_API_KEY,
-    },
-  })
   const query = gql`
     {
       myArticles {
@@ -31,11 +27,6 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const graphQLClient = new GraphQLClient('https://biggs.stepzen.net/dev/devto/__graphql', {
-    headers: {
-      authorization: 'apikey ' + process.env.STEPZEN_API_KEY,
-    },
-  })
   const prevNextQuery = gql`
     {
       myArticles {

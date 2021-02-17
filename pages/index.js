@@ -1,5 +1,6 @@
 import tinytime from 'tinytime'
-import { GraphQLClient, gql } from 'graphql-request'
+import { graphQLClient } from '@/lib/graphql-client'
+import { gql } from 'graphql-request'
 import siteMetadata from '@/data/siteMetadata'
 import Tag from '@/components/Tag'
 import Link from '@/components/Link'
@@ -9,11 +10,6 @@ const MAX_DISPLAY = 5
 const postDateTemplate = tinytime('{MMMM} {DD}, {YYYY}')
 
 export async function getStaticProps() {
-  const graphQLClient = new GraphQLClient('https://biggs.stepzen.net/dev/devto/__graphql', {
-    headers: {
-      authorization: 'apikey ' + process.env.STEPZEN_API_KEY,
-    },
-  })
   const query = gql`
     {
       myArticles {

@@ -9,7 +9,8 @@ import { SEO } from '@/components/SEO'
 import LayoutWrapper from '@/components/LayoutWrapper'
 import MDXComponents from '@/components/MDXComponents'
 
-import { GraphQLClient, gql } from 'graphql-request'
+import { gql } from 'graphql-request'
+import { graphQLClient } from '@/lib/graphql-client'
 
 export default function App({ Component, pageProps, author }) {
   const seo = SEO(author)
@@ -29,11 +30,6 @@ export default function App({ Component, pageProps, author }) {
 }
 
 App.getInitialProps = async () => {
-  const graphQLClient = new GraphQLClient('https://biggs.stepzen.net/dev/devto/__graphql', {
-    headers: {
-      authorization: 'apikey ' + process.env.STEPZEN_API_KEY,
-    },
-  })
   const query = gql`
     {
       user {

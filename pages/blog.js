@@ -1,14 +1,10 @@
-import { GraphQLClient, gql } from 'graphql-request'
+import { gql } from 'graphql-request'
+import { graphQLClient } from '@/lib/graphql-client'
 import siteMetadata from '@/data/siteMetadata'
 import ListLayout from '@/layouts/ListLayout'
 import { PageSeo } from '@/components/SEO'
 
 export async function getStaticProps() {
-  const graphQLClient = new GraphQLClient('https://biggs.stepzen.net/dev/devto/__graphql', {
-    headers: {
-      authorization: 'apikey ' + process.env.STEPZEN_API_KEY,
-    },
-  })
   const query = gql`
     {
       myArticles {

@@ -1,5 +1,5 @@
-import { GraphQLClient, gql } from 'graphql-request'
-import { kebabCase } from '@/lib/utils'
+import { gql } from 'graphql-request'
+import { graphQLClient } from '@/lib/graphql-client'
 import { getAllTags } from '@/lib/tags'
 import siteMetadata from '@/data/siteMetadata'
 import ListLayout from '@/layouts/ListLayout'
@@ -24,11 +24,6 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const graphQLClient = new GraphQLClient('https://biggs.stepzen.net/dev/devto/__graphql', {
-    headers: {
-      authorization: 'apikey ' + process.env.STEPZEN_API_KEY,
-    },
-  })
   const query = gql`
     {
       myArticles {
