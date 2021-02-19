@@ -1,3 +1,4 @@
+/*global Promise */
 import { gql } from 'graphql-request'
 import { graphQLClient } from '@/lib/graphql-client'
 import PostLayout from '@/layouts/PostLayout'
@@ -34,6 +35,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
+  const delay = (interval) => new Promise((resolve) => setTimeout(resolve, interval))
   const prevNextQuery = gql`
     {
       myArticles {
@@ -50,6 +52,8 @@ export async function getStaticProps({ params }) {
     }
   `
   const allPosts = await graphQLClient.request(prevNextQuery)
+  // this is purely here because of rate limits on the DEV API that get triggered during a build
+  await delay(400)
   const postQuery = gql`
     query getPosts($path: String!) {
       publishedArticleByPath(path: $path) {
