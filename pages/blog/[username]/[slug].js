@@ -75,6 +75,8 @@ export async function getStaticProps({ params }) {
       }
     }
   `
+  // this is purely here because of rate limits on the DEV API that get triggered during a build
+  await delay(400)
   const postPathVar = {
     path: '/' + params.username + '/' + params.slug,
   }
