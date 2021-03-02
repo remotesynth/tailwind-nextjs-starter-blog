@@ -53,7 +53,7 @@ export async function getStaticProps({ params }) {
   `
   const allPosts = await graphQLClient.request(prevNextQuery)
   // this is purely here because of rate limits on the DEV API that get triggered during a build
-  await delay(400)
+  await delay(500)
   const postQuery = gql`
     query getPosts($path: String!) {
       publishedArticleByPath(path: $path) {
@@ -76,7 +76,7 @@ export async function getStaticProps({ params }) {
     }
   `
   // this is purely here because of rate limits on the DEV API that get triggered during a build
-  await delay(400)
+  await delay(500)
   const postPathVar = {
     path: '/' + params.username + '/' + params.slug,
   }
